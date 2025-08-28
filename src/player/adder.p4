@@ -233,7 +233,7 @@ control MyIngress(inout headers hdr,
                 Original UDP port is 12345
 
                 Then, 
-                
+
                 modify_dst action changes the destination IP address and UDP port
                 Oirginal IP destination will be modify to host3's IP address 
                 Which change 0x0a000102 to 0x0a000103 in header ipv4.dstAddr
@@ -242,7 +242,7 @@ control MyIngress(inout headers hdr,
                 which modify hdr.udp.dstPort from 12345 to 54321
             */
 
-            modify_dst();
+            // modify_dst();
             
 
             /*  Your can pracitce for fun: 
